@@ -1,0 +1,48 @@
+arazga2019@gmail.com
+Android123
+
+
+if mahaba ang text paliitin ang font
+
+ang sounds pambalik
+
+
+testing if automatic mag disabled ang button sa helps
+
+reset timer sa easy and average
+
+
+----
+
+arazga.tk
+148.66.136.189
+
+xhdv5l43lxef
+_?i<x&3F
+
+
+
+$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
+
+
+<?php 
+
+session_start();
+date_default_timezone_set('Asia/Manila');
+$connection = mysqli_connect("localhost", "xhdv5l43lxef", "_?i<x&3F", "arazga_db");
+
+
+
+ ?>
+
+
+
+mga may Android.
+mobile-header.php
+
+mobile-easy-level-game.php
+mobile-solo-choose-difficulty.php
+mobile-difficult-level-game.php
+mobile-average-level-game.php
