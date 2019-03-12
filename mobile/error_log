@@ -1,0 +1,48 @@
+[19-Feb-2019 13:32:35 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[19-Feb-2019 13:32:35 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[19-Feb-2019 13:32:37 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[19-Feb-2019 13:32:37 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[21-Feb-2019 20:04:01 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[21-Feb-2019 20:04:01 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[21-Feb-2019 20:04:21 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[21-Feb-2019 20:04:21 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[21-Feb-2019 20:04:50 Asia/Manila] PHP Warning:  A non-numeric value encountered in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 78
+[21-Feb-2019 20:04:50 Asia/Manila] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 80
+[22-Feb-2019 10:41:50 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[22-Feb-2019 10:41:50 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[22-Feb-2019 11:10:24 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[22-Feb-2019 11:10:24 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[26-Feb-2019 09:12:23 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[26-Feb-2019 09:12:23 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[26-Feb-2019 09:12:42 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[26-Feb-2019 09:12:42 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[26-Feb-2019 09:20:15 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[26-Feb-2019 09:20:15 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[26-Feb-2019 09:22:31 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[26-Feb-2019 09:22:31 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[27-Feb-2019 13:39:39 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[27-Feb-2019 13:39:39 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[27-Feb-2019 13:39:46 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[27-Feb-2019 13:39:46 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[28-Feb-2019 09:09:56 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[28-Feb-2019 09:09:56 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[01-Mar-2019 14:22:28 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[01-Mar-2019 14:22:28 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[08-Mar-2019 19:53:14 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[08-Mar-2019 19:53:14 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[08-Mar-2019 19:57:30 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[08-Mar-2019 19:57:30 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[08-Mar-2019 19:58:05 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[08-Mar-2019 19:58:05 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[08-Mar-2019 19:58:30 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[08-Mar-2019 19:58:30 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[10-Mar-2019 14:21:56 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[10-Mar-2019 14:21:56 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[10-Mar-2019 14:22:15 Asia/Manila] PHP Notice:  Undefined index: background in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 25
+[10-Mar-2019 14:22:15 Asia/Manila] PHP Notice:  Undefined index: sound in /home/xhdv5l43lxef/public_html/mobile/mobile-header.php on line 60
+[10-Mar-2019 14:23:29 Asia/Manila] PHP Warning:  A non-numeric value encountered in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 78
+[10-Mar-2019 14:23:29 Asia/Manila] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 80
+[10-Mar-2019 14:23:39 Asia/Manila] PHP Warning:  A non-numeric value encountered in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 78
+[10-Mar-2019 14:23:39 Asia/Manila] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 80
+[10-Mar-2019 14:23:42 Asia/Manila] PHP Warning:  A non-numeric value encountered in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 78
+[10-Mar-2019 14:23:42 Asia/Manila] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/xhdv5l43lxef/public_html/mobile/mobile-easy-level-game.php on line 80

@@ -33,7 +33,7 @@ $res2 = mysqli_fetch_assoc($qry2);
 
 
 
-if ($res['hostCurrentQuestionNumber'] == '31' and $res['opponentCurrentQuestionNumber'] == '31') {
+if ($res['hostCurrentQuestionNumber'] == '16' and $res['opponentCurrentQuestionNumber'] == '16') {
 	mysqli_query($connection, "update two_player_game_history_table set matchStatus = 'Match Ended' where twoPlayerGameHistoryId = '" . $_POST['twoPlayerGameHistoryId'] . "'");
 
 }
@@ -58,7 +58,7 @@ else
              
               <h6 class="text-center">Match ID <?php echo $res['twoPlayerGameHistoryId']; ?> (<?php echo $res['difficulty']; ?>)</h6>
 
-              	<?php if ($res['hostCurrentQuestionNumber'] == '31' and $res['opponentCurrentQuestionNumber'] == '31'): ?>
+              	<?php if ($res['hostCurrentQuestionNumber'] == '16' and $res['opponentCurrentQuestionNumber'] == '16'): ?>
               		 <h1 class="text-center">GAME OVER</h1>
               		<?php if ($_SESSION['playerId'] == $res['opponentId']): ?>
 				<?php if ($res['hostScore'] < $res['opponentScore']): ?>
@@ -88,13 +88,13 @@ else
 				<?php endif ?>
               	<?php endif ?>
 
-              <?php if ($res['hostCurrentQuestionNumber'] != '31') { ?>
+              <?php if ($res['hostCurrentQuestionNumber'] != '16') { ?>
               	<h5 class="text-center text-success"><?php echo $res1['username'] ; ?> has not yet finished.</h5>
               <?php } else { ?>
               	<h5 class="text-center text-success"><?php echo $res1['username'] ; ?> scored <?php echo  $res['hostScore']; ?>.</h5>
               <?php } ?>
 
-              <?php if ($res['opponentCurrentQuestionNumber'] != '31') { ?>
+              <?php if ($res['opponentCurrentQuestionNumber'] != '16') { ?>
               	<h5 class="text-center text-success"><?php echo $res2['username'] ; ?> has not yet finished.</h5>
               <?php } else { ?>
               	<h5 class="text-center text-success"><?php echo $res2['username'] ; ?> scored <?php echo  $res['opponentScore']; ?>.</h5>

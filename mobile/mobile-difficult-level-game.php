@@ -205,6 +205,8 @@ function correctAnswer()
           $('#hint1Answer').prop("disabled", true);
         }
 
+         $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + data + '');
+
           iziToast.show({
               title: 'Nice!',
               message: 'You are correct!',
@@ -221,7 +223,7 @@ function correctAnswer()
               onClosed: function () {
                 if (answers.length  == 0) {
                   var num = data;
-                  $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + num + '');
+                 
                 }
               },
               position: 'topCenter',
@@ -236,25 +238,25 @@ function correctAnswer()
 function wrongAnswer()
 {
   $.get("include-wrong-answer.php", function(data, status) {
-          iziToast.show({
-              title: 'Awww!',
-              message: 'Incorrect answer!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              onClosed: function () {
+          // iziToast.show({
+          //     title: 'Awww!',
+          //     message: 'Incorrect answer!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     onClosed: function () {
 
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
       });
 
   playWrongSound();
@@ -307,30 +309,32 @@ $.get("include-help-hint-1answer.php", function(data, status) {
         $('#hint1Answer').prop("disabled", true);
         }
 
-          iziToast.show({
-              title: 'Bonus used!',
-              message: 'You got 1 answer.',
-              color: 'green',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              position: 'topCenter',
-              onClosed: function () {
-                playCorrectSound();
-                if (answers.length  == 0) {
-                  var num = data;
-                  $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + num + '');
-                }
-              },
-              close: false,
+        $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + data + '');
 
-          });
+          // iziToast.show({
+          //     title: 'Bonus used!',
+          //     message: 'You got 1 answer.',
+          //     color: 'green',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     position: 'topCenter',
+          //     onClosed: function () {
+          //       playCorrectSound();
+          //       if (answers.length  == 0) {
+          //         var num = data;
+                  
+          //       }
+          //     },
+          //     close: false,
+
+          // });
       });
 
   
@@ -410,35 +414,32 @@ $('#submitButton').click(function() {
        playWrongSound();
    
     $.get("include-wrong-answer.php", function(data, status) {
-          
 
-          iziToast.show({
-              title: 'Opps!',
-              message: 'Time is up!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
+      $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + data + '');
 
-
-              onClosed: function () {
-
-                var num = data;
-
-               
-                $(location).attr('href', 'mobile-difficult-level-game.php?questionNumber=' + num + '');
+          // iziToast.show({
+          //     title: 'Opps!',
+          //     message: 'Time is up!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
 
 
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          //     onClosed: function () {
+
+          //       var num = data;
+
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
 
       });
 

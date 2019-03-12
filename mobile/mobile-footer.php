@@ -11,10 +11,10 @@
       playSound();
     });
 
-    <?php 
+    // <?php 
 
-    mysqli_close($connection);
-     ?>
+    // mysqli_close($connection);
+    //  ?>
 
 
     </script>

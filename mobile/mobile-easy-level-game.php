@@ -356,28 +356,28 @@ function correctAnswer()
 
 
         }
+        $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + data + '');
 
-
-          iziToast.show({
-              title: 'Nice!',
-              message: 'You are correct!',
-              color: 'green',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              onClosed: function () {
-                var num = data;
-                $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + num + '');
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          // iziToast.show({
+          //     title: 'Nice!',
+          //     message: 'You are correct!',
+          //     color: 'green',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     onClosed: function () {
+          //       var num = data;
+                
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
       });
 
   playCorrectSound();
@@ -387,26 +387,28 @@ function correctAnswer()
 function wrongAnswer()
 {
   $.get("include-wrong-answer.php", function(data, status) {
-          iziToast.show({
-              title: 'Awww!',
-              message: 'Incorrect answer!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              onClosed: function () {
-                var num = data;
-                $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + num + '');
-              },
-              position: 'topCenter',
-              close: false,
-          });
+    $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + data + '');
+    
+          // iziToast.show({
+          //     title: 'Awww!',
+          //     message: 'Incorrect answer!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     onClosed: function () {
+          //       var num = data;
+                
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
       });
 
   playWrongSound();
@@ -471,35 +473,37 @@ function wrongAnswer()
        playWrongSound();
     disableButton();
     $.get("include-wrong-answer.php", function(data, status) {
+
+      $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + data + '');
           
 
-          iziToast.show({
-              title: 'Opps!',
-              message: 'Time is up!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
+          // iziToast.show({
+          //     title: 'Opps!',
+          //     message: 'Time is up!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
 
 
-              onClosed: function () {
+          //     onClosed: function () {
 
-                var num = data;
+          //       var num = data;
 
                
-                $(location).attr('href', 'mobile-easy-level-game.php?questionNumber=' + num + '');
+                
 
 
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
 
       });
 

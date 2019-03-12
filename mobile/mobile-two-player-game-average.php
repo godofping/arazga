@@ -19,7 +19,7 @@ else
 $_SESSION['questionNumber'] = $_GET['questionNumber'];
 
 
-if ($_SESSION['questionNumber'] == 31) {
+if ($_SESSION['questionNumber'] == 16) {
   header("Location: mobile-game-over-two-player.php?twoPlayerGameHistoryId=".$_SESSION['twoPlayerGameHistoryId']."&score=".$_SESSION['score']."");
 }
 
@@ -30,6 +30,15 @@ if ($_SESSION['questionNumber'] == 31) {
 
 <link rel="stylesheet" type="text/css" href="../css/iziToast.min.css">
 <script type="text/javascript" src="../js/iziToast.min.js"></script>
+<script type="text/javascript">
+history.pushState(null, document.title, location.href);
+window.addEventListener('popstate', function (event)
+{
+  history.pushState(null, document.title, location.href);
+});
+</script> 
+
+
 
 
 <script type="text/javascript" src="../js/jquery.progressBarTimer.js"></script>
@@ -87,33 +96,35 @@ if ($_SESSION['questionNumber'] == 31) {
     $('#example10').progressBarTimer().stop();
     disableButton();
     $.get("include-wrong-answer-easy-twoplayer.php", function(data, status) {
+
+      window.location.href = "mobile-two-player-game-average.php?questionNumber=" + data + "";
           
 
-          iziToast.show({
-              title: 'Opps!',
-              message: 'Time is up!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              onClosed: function () {
+          // iziToast.show({
+          //     title: 'Opps!',
+          //     message: 'Time is up!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     onClosed: function () {
 
-                var num = data;
+          //       var num = data;
                 
-                $(location).attr('href', 'mobile-two-player-game-average.php?questionNumber=' + num + '');
+                
       
 
 
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
 
       });
 
@@ -313,26 +324,29 @@ if ($_SESSION['questionNumber'] == 31) {
           disableButton();
           
             $.get("include-right-answer-easy-twoplayer-average.php", function(data, status) {
-            iziToast.show({
-                title: 'Nice!',
-                message: 'You are correct!',
-                color: 'green',
-                iconUrl: null,
-                timeout: 3000,
-                pauseOnHover: false,
-                transitionInMobile: 'fadeIn',
-                transitionOutMobile: 'fadeOut',
-                drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-                onClosed: function () {
-                  var num = data;
-                  $(location).attr('href', 'mobile-two-player-game-average.php?questionNumber=' + num + '');
-                },
-                position: 'topCenter',
-                close: false,
-            });
+
+              window.location.href = "mobile-two-player-game-average.php?questionNumber=" + data + "";
+              
+            // iziToast.show({
+            //     title: 'Nice!',
+            //     message: 'You are correct!',
+            //     color: 'green',
+            //     iconUrl: null,
+            //     timeout: 3000,
+            //     pauseOnHover: false,
+            //     transitionInMobile: 'fadeIn',
+            //     transitionOutMobile: 'fadeOut',
+            //     drag: false,
+            //   animateInside: true,
+            //   progressBar: false,
+            //   close: false,
+            //     onClosed: function () {
+            //       var num = data;
+                  
+            //     },
+            //     position: 'topCenter',
+            //     close: false,
+            // });
         });
 
             playCorrectSound();
@@ -340,25 +354,25 @@ if ($_SESSION['questionNumber'] == 31) {
         }
         else
         {
-          iziToast.show({
-              title: 'Awww!',
-              message: 'Incorrect answer!',
-              color: 'red',
-              iconUrl: null,
-              timeout: 3000,
-              pauseOnHover: false,
-              transitionInMobile: 'fadeIn',
-              transitionOutMobile: 'fadeOut',
-              drag: false,
-              animateInside: true,
-              progressBar: false,
-              close: false,
-              onClosed: function () {
+          // iziToast.show({
+          //     title: 'Awww!',
+          //     message: 'Incorrect answer!',
+          //     color: 'red',
+          //     iconUrl: null,
+          //     timeout: 3000,
+          //     pauseOnHover: false,
+          //     transitionInMobile: 'fadeIn',
+          //     transitionOutMobile: 'fadeOut',
+          //     drag: false,
+          //     animateInside: true,
+          //     progressBar: false,
+          //     close: false,
+          //     onClosed: function () {
        
-              },
-              position: 'topCenter',
-              close: false,
-          });
+          //     },
+          //     position: 'topCenter',
+          //     close: false,
+          // });
 
           playWrongSound();
         }
@@ -432,12 +446,4 @@ if ($_SESSION['questionNumber'] == 31) {
 </script>
 
 <?php } ?>
-
-<script type="text/javascript">
-history.pushState(null, document.title, location.href);
-window.addEventListener('popstate', function (event)
-{
-  history.pushState(null, document.title, location.href);
-});
-</script> 
 
